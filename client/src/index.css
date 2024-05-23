@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+h1+*,
+p+.add-btn +h2,
+img+.add-btn+* {
+    margin-top: 3rem;
+}
+
+h2+.add-btn+*,
+h2+.add-input {
+    margin-top: 1.5rem;
+}
+
+p+.add-btn+*,
+p+.add-input,
+img+.add-input,
+img+.add-btn+p,
+img+.add-btn+img,
+img+.add-btn +.edit-input {
+    margin-top: 1rem;
+}
+
+.edit-input+*,.add-input +* {
+    margin-top: 1rem;
+}
